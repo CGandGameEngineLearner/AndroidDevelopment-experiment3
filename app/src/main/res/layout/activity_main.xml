@@ -1,42 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Button
-        android:id="@+id/buttonEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="邮件发送" />
-    <Button
-        android:id="@+id/buttonRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="注册" />
-    <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="登录" />
-    <Button
-        android:id="@+id/buttonChangePassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="修改密码" />
+    <data>
+        <import type="com.example.experiment3.LoginActivity"/>
 
-    <Button
-        android:id="@+id/buttonPersonalCenter"
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="个人主页" />
-    <Button
-        android:id="@+id/buttonDetails"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="详情界面" />
-    <Button
-        android:id="@+id/buttonQQ"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="QQ" />
-</LinearLayout>
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonUserLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户登录" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/buttonChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="修改密码" />
+
+        <Button
+            android:id="@+id/buttonPersonalCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="个人主页" />
+
+        <Button
+            android:id="@+id/buttonDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="详情界面" />
+
+        <Button
+            android:id="@+id/buttonQQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QQ" />
+    </LinearLayout>
+</layout>
