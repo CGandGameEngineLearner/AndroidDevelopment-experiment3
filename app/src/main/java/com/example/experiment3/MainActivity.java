@@ -6,19 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.SafeBrowsingResponse;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
 
-    protected Button buttonUserLogin,buttonSignUp,buttonLogin,buttonDetails,buttonChangePassword,buttonRegister,buttonQQ;
+    protected Button buttonUserLogin,buttonSignUp,buttonSanXingDui,buttonDetails,buttonChangePassword,buttonRegister,buttonQQ;
 
 
     protected void initButtons()
     {
         buttonUserLogin =findViewById(R.id.buttonUserLogin);
         buttonSignUp=findViewById(R.id.buttonSignUp);
-        buttonLogin=findViewById(R.id.buttonLogin);
+        buttonSanXingDui=findViewById(R.id.buttonSanxingdui);
         buttonQQ=findViewById(R.id.buttonQQ);
         buttonDetails=findViewById(R.id.buttonDetails);
 
@@ -40,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intentSignUp = new Intent(MainActivity.this, SignUpActivity.class);
                 startActivity(intentSignUp);
                 Log.d("MainActivity","SignUpActivity");
+            }
+        });
+        buttonSanXingDui.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentSanxingdui = new Intent(MainActivity.this, SanxingduiActivity.class);
+                startActivity(intentSanxingdui);
+                Log.d("MainActivity","SanxingduiActivity");
             }
         });
     }
