@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">实验2</string>
+    <string name="app_name">实验3</string>
     <string name="prompt_email">邮箱</string>
     <string name="prompt_password">密码</string>
     <string name="action_sign_in">注册或登录</string>
@@ -49,4 +49,6 @@
     <string name="username">用户名</string>
     <string name="please_input_password">请输入密码</string>
     <string name="login_success">登录成功</string>
+    <string name="sign_up_menu">注册界面</string>
+    <string name="username_colon">用户名：</string>
 </resources>

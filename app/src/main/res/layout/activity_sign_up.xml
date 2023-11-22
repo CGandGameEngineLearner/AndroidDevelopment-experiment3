@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorBlue"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/colorWhite"
+                android:text="@string/sign_up_menu"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/username_colon"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/account_colon"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/editTextAccount"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/password_colon"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:inputType="textPassword" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="性别:"
+                android:textSize="25sp" />
+            <RadioGroup
+                android:id="@+id/radioGroupSex"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男" />
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="女" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:background="@color/colorBlue"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/centeredTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorWhite"
+                    android:text="请选择出生年月日"
+                    />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/dobEditText"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:hint="请选择日期"
+                android:focusable="false"
+                android:inputType="none"
+                android:clickable="true"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="爱好："
+                android:textSize="25sp" />
+            <CheckBox
+                android:id="@+id/cb_music"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="弹琴" />
+
+            <CheckBox
+                android:id="@+id/cb_chess"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="下棋" />
+
+            <CheckBox
+                android:id="@+id/cb_calligraphy"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="书法" />
+
+            <CheckBox
+                android:id="@+id/cb_painting"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="绘画" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorYellow"
+            android:text="注册"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
