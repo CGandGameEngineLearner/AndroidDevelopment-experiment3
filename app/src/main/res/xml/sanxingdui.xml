@@ -2,83 +2,53 @@
 <resources>
     <list>
         <item name="item0">
-            <title>
-                三星堆博物馆举办“寻…
-            </title>
-            <cover>
-                sanxingdui_cover1
-            </cover>
-            <content>
-                为迎接端午佳节和中国文化和自然遗产日的到来，6月6日上午，三星堆博物馆举办了以“小城故事——寻踪影子…
-            </content>
+            <title>三星堆博物馆举办“寻…</title>
+            <cover>sanxingdui_cover0</cover>
+            <content>为迎接端午佳节和中国文化和自然遗产日的到来，6月6日上午，三星堆博物馆举办了以“小城故事——寻踪影子…</content>
             <date_info>
                 <year>2019</year>
-                <month>06</month>
-                <day>06</day>
+                <month>6</month>
+                <day>6</day>
             </date_info>
         </item>
         <item name="item1">
-            <title>
-                三星堆博物馆举办“寻…
-            </title>
-            <cover>
-                sanxingdui_cover1
-            </cover>
-            <content>
-                为迎接端午佳节和中国文化和自然遗产日的到来，6月6日上午，三星堆博物馆举办了以“小城故事——寻踪影子…
-            </content>
+            <title>美国华侨青少年走进三…</title>
+            <cover>sanxingdui_cover1</cover>
+            <content>6月30日，25名来自美国的华侨青少年儿童来到三星堆博物馆，感悟三星堆文化，开启快乐的古蜀文明之旅。…</content>
             <date_info>
                 <year>2019</year>
-                <month>06</month>
-                <day>06</day>
+                <month>6</month>
+                <day>6</day>
             </date_info>
         </item>
         <item name="item2">
-            <title>
-                三星堆博物馆举办“寻…
-            </title>
-            <cover>
-                sanxingdui_cover1
-            </cover>
-            <content>
-                为迎接端午佳节和中国文化和自然遗产日的到来，6月6日上午，三星堆博物馆举办了以“小城故事——寻踪影子…
-            </content>
+            <title>多彩暑假，玩转三星堆…</title>
+            <cover>sanxingdui_cover2</cover>
+            <content>2019年暑假已经圆满结束，在这个“火热”的暑假了，三星堆博物馆也是“热度不减”,丰富多彩的社教活动…</content>
             <date_info>
                 <year>2019</year>
-                <month>06</month>
-                <day>06</day>
+                <month>9</month>
+                <day>1</day>
             </date_info>
         </item>
         <item name="item3">
-            <title>
-                三星堆博物馆举办“寻…
-            </title>
-            <cover>
-                sanxingdui_cover1
-            </cover>
-            <content>
-                为迎接端午佳节和中国文化和自然遗产日的到来，6月6日上午，三星堆博物馆举办了以“小城故事——寻踪影子…
-            </content>
+            <title>三星堆博物馆举办亲子…</title>
+            <cover>sanxingdui_cover3</cover>
+            <content>2019年10月19日——20日，三星堆博物馆开展了主题为“趣味三星堆，探秘古蜀国”的亲子研学活动，…</content>
             <date_info>
                 <year>2019</year>
-                <month>06</month>
-                <day>06</day>
+                <month>10</month>
+                <day>28</day>
             </date_info>
         </item>
         <item name="item4">
-            <title>
-                三星堆博物馆举办“寻…
-            </title>
-            <cover>
-                sanxingdui_cover1
-            </cover>
-            <content>
-                为迎接端午佳节和中国文化和自然遗产日的到来，6月6日上午，三星堆博物馆举办了以“小城故事——寻踪影子…
-            </content>
+            <title>三星堆博物馆举办纪念…</title>
+            <cover>sanxingdui_cover4</cover>
+            <content>2019年是三星堆遗址发现九十周年，12月20日以“发现三星堆一一三星堆与巴蜀考古”为主题的纪念特展…</content>
             <date_info>
                 <year>2019</year>
-                <month>06</month>
-                <day>06</day>
+                <month>12</month>
+                <day>20</day>
             </date_info>
         </item>
     </list>
