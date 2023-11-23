@@ -51,4 +51,7 @@
     <string name="login_success">登录成功</string>
     <string name="sign_up_menu">注册界面</string>
     <string name="username_colon">用户名：</string>
+    <string name="notice">\u3000\u3000很多次被问为什么很多综合类博物馆都免费开放了，三星堆博物馆还要收门票。第一，我馆是遗址类博物馆，关于遗址类博物馆继续收费在《关于全国博物馆、纪念馆免费开放的通知 (中宣发 [2008] 2号)》文件中有依据，文件明确指出“其中，文物建筑及遗址类博物馆暂不实行全部免费开放。\"遗址类收费的原因有很多，但是文物安全是重要因素，古建筑和遗址类本身能承文物建筑及遗址类博物馆暂不实行全部免费开放..</string>
+    <string name="warning">\u3000\u3000票务须知</string>
+    <string name="direct">\u3000\u3000票务指南</string>
 </resources>

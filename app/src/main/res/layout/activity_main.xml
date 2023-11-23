@@ -30,10 +30,10 @@
             android:text="三星堆新闻" />
 
         <Button
-            android:id="@+id/buttonChangePassword"
+            android:id="@+id/buttonConsult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="修改密码" />
+            android:text="博物馆咨询" />
 
         <Button
             android:id="@+id/buttonPersonalCenter"

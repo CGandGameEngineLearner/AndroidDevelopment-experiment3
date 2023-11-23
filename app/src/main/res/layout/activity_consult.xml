@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#F822A9" />
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:text="开闭馆咨询"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/image_view1"
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="70dp"
+                android:src="@mipmap/museum" />
+
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/buttonNotice"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="票务优惠信息公告"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="left" />
+
+        <Button
+            android:id="@+id/buttonWarning"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_marginTop="-75dp"
+            android:layout_marginLeft="140dp"
+            android:text="参观须知"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="left" />
+
+        <Button
+            android:id="@+id/buttonDirect"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="-76dp"
+            android:backgroundTint="@color/colorWhite"
+            android:text="票务指南"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:text="@string/notice"
+            android:textSize="20sp"
+            android:layout_gravity="center" />
+        <ImageView
+            android:id="@+id/image_view2"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/museum"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

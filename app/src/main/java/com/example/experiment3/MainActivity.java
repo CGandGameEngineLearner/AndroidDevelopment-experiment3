@@ -12,7 +12,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
 
-    protected Button buttonUserLogin,buttonSignUp,buttonSanXingDui,buttonDetails,buttonChangePassword,buttonRegister,buttonQQ;
+    protected Button buttonUserLogin,buttonSignUp,buttonSanXingDui,buttonDetails,buttonConsult,buttonRegister,buttonQQ;
 
 
     protected void initButtons()
@@ -23,8 +23,16 @@ public class MainActivity extends AppCompatActivity {
         buttonQQ=findViewById(R.id.buttonQQ);
         buttonDetails=findViewById(R.id.buttonDetails);
 
-        buttonChangePassword=findViewById(R.id.buttonChangePassword);
+        buttonConsult=findViewById(R.id.buttonConsult);
 
+        buttonConsult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentConsult = new Intent(MainActivity.this,ConsultActivity.class);
+                startActivity(intentConsult);
+                Log.d("MainActivity","ConsultActivity");
+            }
+        });
 
         buttonUserLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
