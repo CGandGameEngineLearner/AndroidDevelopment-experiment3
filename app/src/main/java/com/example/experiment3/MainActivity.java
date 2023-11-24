@@ -12,7 +12,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
 
-    protected Button buttonUserLogin,buttonSignUp,buttonSanXingDui,buttonDetails,buttonConsult,buttonRegister,buttonQQ;
+    protected Button buttonUserLogin,buttonSignUp,buttonSanXingDui,buttonConsult;
 
 
     protected void initButtons()
@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
         buttonUserLogin =findViewById(R.id.buttonUserLogin);
         buttonSignUp=findViewById(R.id.buttonSignUp);
         buttonSanXingDui=findViewById(R.id.buttonSanxingdui);
-        buttonQQ=findViewById(R.id.buttonQQ);
-        buttonDetails=findViewById(R.id.buttonDetails);
 
         buttonConsult=findViewById(R.id.buttonConsult);
 

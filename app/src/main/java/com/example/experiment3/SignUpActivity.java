@@ -1,6 +1,7 @@
 package com.example.experiment3;
 
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Calendar;
@@ -99,5 +101,45 @@ public class SignUpActivity extends AppCompatActivity {
 
         // 显示日期选择对话框
         datePickerDialog.show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        Log.d("LoginActivity","Back");
+
+        mEditTextUsername.setText("");
+        mEditTextPassword.setText("");
+        mEditTextAccount.setText("");
+        mDobEditText.setText("请选择日期");
+        mRadioGroupSex.clearCheck();
+
+        for(CheckBox hobbie:mCheckBoxesHobbies)
+        {
+            hobbie.setChecked(false);
+        }
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setTitle("是否要退出APP吗？");
+
+
+        builder.setMessage("确定要关闭APP吗？")
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+
+                        finish();
+                    }
+                })
+                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();
+                    }
+                });
+
+        // 创建并显示对话框
+        AlertDialog dialog = builder.create();
+        AlertDialog alertDialog =builder.create();//这个方法可以返回一个alertDialog对象
+        alertDialog.show();
     }
 }

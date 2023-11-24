@@ -35,22 +35,5 @@
             android:layout_height="wrap_content"
             android:text="博物馆咨询" />
 
-        <Button
-            android:id="@+id/buttonPersonalCenter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="个人主页" />
-
-        <Button
-            android:id="@+id/buttonDetails"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="详情界面" />
-
-        <Button
-            android:id="@+id/buttonQQ"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="QQ" />
     </LinearLayout>
 </layout>
