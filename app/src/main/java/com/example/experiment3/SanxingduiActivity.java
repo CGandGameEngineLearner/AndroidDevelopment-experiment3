@@ -1,10 +1,14 @@
 package com.example.experiment3;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,6 +37,14 @@ public class SanxingduiActivity extends AppCompatActivity {
             mTitleContent = itemView.findViewById(R.id.textViewContent);
             mDate=itemView.findViewById(R.id.textViewDate);
             mCover=itemView.findViewById(R.id.textViewCover);
+
+            mCover.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    createAlertDialog(mCover,mTitle.getText().toString(),mTitleContent.getText().toString(),mDate.getText().toString());
+                }
+            });
         }
     }
 
@@ -163,5 +175,31 @@ public class SanxingduiActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mNewsAdapter);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(layoutManager);
+    }
+    protected void createAlertDialog
+            (
+                    ImageView Cover,
+                    String Title,
+                    String Content,
+                    String Date
+            )
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setTitle(Title);
+
+        View NewsDetail=this.getLayoutInflater().inflate(R.layout.layout_news_detail,null);
+
+        TextView vContent = NewsDetail.findViewById(R.id.textViewContent);
+        TextView vDate=NewsDetail.findViewById(R.id.textViewDate);
+        ImageView vCover=NewsDetail.findViewById(R.id.textViewCover);
+
+        vContent.setText(Content);
+        vDate.setText(Date);
+        vCover=Cover;
+
+        builder.setView(NewsDetail);
+        AlertDialog alertDialog =builder.create();//这个方法可以返回一个alertDialog对象
+        alertDialog.show();
     }
 }
