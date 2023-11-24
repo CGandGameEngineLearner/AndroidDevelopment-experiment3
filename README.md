@@ -34,7 +34,7 @@ PC机、Android Studio
 
 内置账号：zhangsan@163.com 内置密码：12345678
 
- ***\*要求：\****（1）.使用hint属性；(2).使用Toast提示登录结果 
+ ***要求***：（1）.使用hint属性；(2).使用Toast提示登录结果 
 
 2. 运行结果
 ![1](introduce/1.png)
@@ -61,7 +61,7 @@ PC机、Android Studio
 
 （8） 用户点击“注册”按钮后，Toast显示注册的用户名-性别-爱好-年/月/日
 
-***\*要求：\****（1）.使用hint属性；
+***要求：***（1）.使用hint属性；
 
 2. 运行结果
 ![1](introduce/2.png)
@@ -71,7 +71,7 @@ PC机、Android Studio
 
 设计一个应用程序，显示咨询分类。类别和内容自拟，包括文字、图片等。
 
-***\*要求：\****（1）. 使用TabLayout+ScrollView； 
+***要求：***（1）. 使用TabLayout+ScrollView； 
 
 2. 运行结果
 ![1](introduce/3.png)
@@ -81,7 +81,7 @@ PC机、Android Studio
 
 设计一个应用程序，显示新闻列表，每项内容为图片、标题、部分内容、日期。点击每个选项通过对话框方式显示详细内容。
 
-***\*要求：\****（1）. 使用RecyclerView；（2）点击对象可为图片、标题； 
+***要求：***（1）. 使用RecyclerView；（2）点击对象可为图片、标题； 
 
 2. 运行结果
 ![1](introduce/4.png)
@@ -98,8 +98,9 @@ PC机、Android Studio
 
 （3） 提示：
 
-@Override
+```java
 
+@Override
   public void onBackPressed() {
 
 ​    super.onBackPressed();
@@ -107,8 +108,7 @@ PC机、Android Studio
 ​    // 添加点击Back键后的逻辑代码
 
   }
-
-***\*要求：\**** 
+```
 
 2. 运行结果
 ![1](introduce/5.png)
