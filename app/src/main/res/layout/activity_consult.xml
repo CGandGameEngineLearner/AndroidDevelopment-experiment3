@@ -33,8 +33,9 @@
                 android:id="@+id/image_view1"
                 android:layout_width="500dp"
                 android:layout_height="200dp"
+                android:scaleType="fitXY"
                 android:layout_marginTop="70dp"
-                android:src="@mipmap/museum" />
+                android:src="@mipmap/sanxingdui0" />
 
 
         </RelativeLayout>
@@ -83,13 +84,12 @@
             android:layout_gravity="center" />
         <ImageView
             android:id="@+id/image_view2"
+            android:scaleType="fitXY"
             android:layout_width="400dp"
             android:layout_height="200dp"
             android:layout_marginTop="20dp"
-            android:src="@mipmap/museum"
+            android:src="@mipmap/sanxingdui1"
             android:layout_gravity="center"/>
-
-
 
     </LinearLayout>
 

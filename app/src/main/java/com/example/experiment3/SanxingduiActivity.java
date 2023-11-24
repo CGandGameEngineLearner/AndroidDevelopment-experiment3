@@ -6,9 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -112,7 +109,7 @@ public class SanxingduiActivity extends AppCompatActivity {
             if (parser.getEventType() == XmlPullParser.START_TAG) {
                 if (parser.getName().equals("item")) {
                     itemName = parser.getAttributeValue(null, "name");
-                    currentNews = new News();  // Create a new News object for each "item"
+                    currentNews = new News();
                 } else if (parser.getName().equals("title")) {
                     currentNews.mTitle = parser.nextText();
                 } else if (parser.getName().equals("cover")) {

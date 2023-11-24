@@ -12,14 +12,14 @@ import android.widget.TextView;
 
 public class ConsultActivity extends AppCompatActivity {
 
-    private TabLayout tabLayout;
-    private ScrollView scrollView;
-
     protected Button buttonNotice,buttonWarning,buttonDirect;
     protected TextView textViewContent;
 
-    private void init()
-    {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_consult);
         buttonNotice=findViewById(R.id.buttonNotice);
         buttonWarning=findViewById(R.id.buttonWarning);
         buttonDirect=findViewById(R.id.buttonDirect);
@@ -45,19 +45,5 @@ public class ConsultActivity extends AppCompatActivity {
                 textViewContent.setText(R.string.direct);
             }
         });
-    }
-
-
-
-
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consult);
-        init();
-
-
     }
 }

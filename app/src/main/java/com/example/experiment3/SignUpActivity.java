@@ -121,10 +121,12 @@ public class SignUpActivity extends AppCompatActivity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        builder.setTitle("是否要退出APP吗？");
+        builder.setIcon(R.mipmap.exclamation);
+
+        builder.setTitle("温馨提示");
 
 
-        builder.setMessage("确定要关闭APP吗？")
+        builder.setMessage("你确定要退出当前界面吗？")
                 .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
 
@@ -137,9 +139,8 @@ public class SignUpActivity extends AppCompatActivity {
                     }
                 });
 
-        // 创建并显示对话框
-        AlertDialog dialog = builder.create();
-        AlertDialog alertDialog =builder.create();//这个方法可以返回一个alertDialog对象
+
+        AlertDialog alertDialog =builder.create();
         alertDialog.show();
     }
 }
